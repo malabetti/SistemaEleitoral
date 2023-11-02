@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna do Grêmio</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>Sistema de votação do Grêmio</h1>
+            <nav class="nav">
+                <a class="nava" href="../index.html">Candidatos</a>
+                <a class="nava" href="#votar">Votar</a>
+                <a class="nava" href="./cadastro.html">Acessar</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <h1>Urna Digital</h1>
+        <div class="forms">
+            <div>
+                <h1>Votação</h1>
+                <form action="http://localhost:5000/votar2.php" method="post">
+                    <input type="email" placeholder="Seu email" name="email" required><br>
+                    <input type="number" placeholder="ID do candidato" name="id" required><br>
+                    <input type="submit" value="Votar">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        Sistema de Votação do Grêmio - desenvolvido por Pedro Betti
+    </footer>
+</body>
+</html>

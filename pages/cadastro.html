@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Usuário</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>Sistema de votação do Grêmio</h1>
+            <nav class="nav">
+                <a class="nava" href="../index.html">Candidatos</a>
+                <!--<a class="nava" href="./votar.html">Votar</a>-->
+                <a class="nava" href="#acessar">Acessar</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <h1>Acesso de usuário</h1>
+        <div class="forms">
+            <div>
+                <h1>Acesso</h1>
+                <form action="http://localhost:5000/cadastro.php" method="post">
+                    <input type="email" placeholder="Seu email" name="email" required><br>
+                    <input type="text" placeholder="Seu nome" name="nome" required><br>
+                    <input type="password" placeholder="Sua senha" name="senha" required><br>
+                    <select name="tipo" id="tipo" value="cadastrar">
+                        <option  value="cadastrar">Cadastrar</option>
+                        <option value="acessar">Acessar</option>
+                    </select><br>
+                    <input type="submit" value="Acessar">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        Sistema de Votação do Grêmio - desenvolvido por Pedro Betti
+    </footer>
+</body>
+</html>
