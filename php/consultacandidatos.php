@@ -24,7 +24,8 @@ while ($record = mysqli_fetch_row($results)) {
         'id' => $record[0],
         'nome' => $record[1],
         'numero' => $record[2],
-        'votos' => $record[3]
+        'votos' => $record[4],
+        'desc' => $record[3]
     );
     $candidatos[$index] = $candidato;
     $index++;

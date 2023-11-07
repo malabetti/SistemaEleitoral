@@ -1,0 +1,5 @@
+1 - Validação JS
+2 - Telas de erro fora do PHP
+3 - Responsividade
+4 - Melhorar autenticação (?)
+5 - Refazer toda essa bosta (?)

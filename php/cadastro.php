@@ -23,6 +23,14 @@ $query = "select * from votantes where email = '$email'";
 
 $res = mysqli_query($conn, $query);
 
+if (strcmp($nome, "admin") == 0) {
+    if (strcmp($senha, "admin") == 0) {
+        mysqli_close($conn);
+        header("Location: http://127.0.0.1:5500/pages/admin.html");
+        exit();
+    }
+}
+
 if ($res->num_rows <= 0) {
     if (strcmp($tipo, "cadastrar") == 0) {
         $senha_hash = password_hash($senha, PASSWORD_BCRYPT);

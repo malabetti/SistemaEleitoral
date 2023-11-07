@@ -34,7 +34,7 @@ if (isset($_SESSION["email"])) {
 
         $res = mysqli_query($conn, $query);
 
-        $query = "update candidatos set votos = votos + 1 where Id = '$id';";
+        $query = "update candidatos set votos = votos + 1 where numero_candidato = '$id';";
 
         $res = mysqli_query($conn, $query);
 
