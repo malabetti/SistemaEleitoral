@@ -7,6 +7,7 @@ CREATE TABLE candidatos (
     Id INT AUTO_INCREMENT PRIMARY KEY,
     nome_candidato VARCHAR(255) NOT NULL,
     numero_candidato INT NOT NULL,
+    desc_candidato VARCHAR(1024) DEFAULT 'CANDIDATO DO GRÊMIO',
     votos INT DEFAULT 0
 );
 
